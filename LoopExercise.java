@@ -22,21 +22,31 @@ public class LoopExercise {
 //			}
 //		}
 		
-		int num = 9;
-		boolean isPrime = false;
-		for(int i=2;i<num;i++)
-		{
-			if (num%i==0)
+//		int num = 9;
+//		boolean isPrime = false;
+//		for(int i=2;i<num;i++)
+//		{
+//			if (num%i==0)
+//			{
+//			 isPrime =false;
+//			 break;
+//			}
+//			else {
+//				isPrime=true;
+//			}
+//		}
+//		
+//		System.out.println((isPrime == true)?"Prime":"Not Prime");
+	
+			int x = 125;
+			int res=0;
+			for (int i=x;i>=0;i=i/10)
 			{
-			 isPrime =false;
-			 break;
+				int rem = i%10;
+				res = res + rem;
+				
 			}
-			else {
-				isPrime=true;
-			}
-		}
-		
-		System.out.println((isPrime == true)?"Prime":"Not Prime");
+			System.out.println(res);
 	}
 	
 	
